@@ -27,6 +27,8 @@
     'website': 'http://github.com/jobiols/cl-tatakua',
     'license': 'AGPL-3',
     'depends': [
+        'l10n_py_vat_book',
+        'partner_ruc_unique'
     ],
     'data': [
     ],
