@@ -40,6 +40,7 @@
         {'usr': 'jobiols', 'repo': 'cl-tatakua', 'branch': '13.0'},
         {'usr': 'jobiols', 'repo': 'odoo-paraguay', 'branch': '13.0'},
         {'usr': 'jobiols', 'repo': 'odoo-addons', 'branch': '13.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-account-payment', 'branch': '13.0'},
     ],
     'docker': [
         {'name': 'odoo', 'usr': 'jobiols', 'img': 'odoo-ent', 'ver': '13.0e'},
