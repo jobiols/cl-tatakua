@@ -28,7 +28,13 @@
     'license': 'AGPL-3',
     'depends': [
         'l10n_py_vat_book',
-        'partner_ruc_unique'
+        'partner_ruc_unique',
+
+        # multiples medios de pago
+        'account_payment_group',
+
+        # cartera de cheques
+        'account_check'
     ],
     'data': [
     ],
@@ -40,7 +46,10 @@
         {'usr': 'jobiols', 'repo': 'cl-tatakua', 'branch': '13.0'},
         {'usr': 'jobiols', 'repo': 'odoo-paraguay', 'branch': '13.0'},
         {'usr': 'jobiols', 'repo': 'odoo-addons', 'branch': '13.0'},
+
+        # para multiple medios de pago
         {'usr': 'jobiols', 'repo': 'adhoc-account-payment', 'branch': '13.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-account-financial-tools', 'branch': '13.0'},
     ],
     'docker': [
         {'name': 'odoo', 'usr': 'jobiols', 'img': 'odoo-ent', 'ver': '13.0e'},
