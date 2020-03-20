@@ -20,7 +20,7 @@
 
 {
     'name': 'Tatakua',
-    'version': '13.0.0.0.0',
+    'version': '13.0e.0.0.0',
     'category': 'Tools',
     'summary': "Instancia Tatakua",
     'author': "Tecnopro",
@@ -41,21 +41,20 @@
     'installable': True,
     'application': False,
 
-    'env-ver': '2',
     'port': '8069',
-    'license': 'EE',
-    'git-repos': [
-        'https://github.com/jobiols/cl-tatakua.git',
-        'https://github.com/jobiols/odoo-paraguay.git',
-        'https://github.com/jobiols/odoo-addons.git',
+    'repos': [
+        {'usr': 'jobiols', 'repo': 'cl-tatakua', 'branch': '13.0'},
+        {'usr': 'jobiols', 'repo': 'odoo-paraguay', 'branch': '13.0'},
+        {'usr': 'jobiols', 'repo': 'odoo-addons', 'branch': '13.0'},
 
         # para multiple medios de pago
-        'https://github.com/jobiols/adhoc-account-payment.git',
-        'https://github.com/jobiols/adhoc-account-financial-tools.git',
+        {'usr': 'jobiols', 'repo': 'adhoc-account-payment', 'branch': '13.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-account-financial-tools', 'branch': '13.0'},
     ],
-    'docker-images': [
-        'odoo jobiols/odoo-ent:13.0e',
-        'postgres postgres:10.1-alpine',
-        'nginx nginx'
+    'docker': [
+        {'name': 'odoo', 'usr': 'jobiols', 'img': 'odoo-ent', 'ver': '13.0e'},
+        {'name': 'postgres', 'usr': 'postgres', 'ver': '10.1-alpine'},
+        {'name': 'nginx', 'usr': 'nginx', 'ver': 'latest'},
     ]
+
 }
