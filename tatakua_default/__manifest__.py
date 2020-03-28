@@ -32,9 +32,8 @@
 
         # multiples medios de pago
         'account_payment_group',
-
-        # cartera de cheques
-        'account_check'
+        # cartera de cheques e imporesion de cheques
+        'l10n_py_check_printing',
     ],
     'data': [
     ],
