@@ -20,9 +20,9 @@
 
 {
     'name': 'Tatakua',
-    'version': '13.0e.0.0.0',
+    'version': '13.0.0.0',
     'category': 'Tools',
-    'summary': "Instancia Tatakua",
+    'summary': "Proyecto Tatakua",
     'author': "Tecnopro",
     'website': 'http://github.com/jobiols/cl-tatakua',
     'license': 'AGPL-3',
@@ -40,20 +40,35 @@
     'installable': True,
     'application': False,
 
+    'limit_request': '8196',
+    'limit_memory_soft': '640000000',
+    'limit_memory_hard': '760000000',
+    'limit_time_cpu': '60',
+    'limit_time_real': '120',
+
+    # manifest version, if omitted it is backward compatible
+    'env-ver': '2',
+
+    # if Enterprise it installs in a different directory than community
+    'odoo-license': 'EE',
+
+    # port where odoo starts serving pages
     'port': '8069',
-    'repos': [
-        {'usr': 'jobiols', 'repo': 'cl-tatakua', 'branch': '13.0'},
-        {'usr': 'jobiols', 'repo': 'odoo-paraguay', 'branch': '13.0'},
-        {'usr': 'jobiols', 'repo': 'odoo-addons', 'branch': '13.0'},
+
+    # list of url repos to install in the form 'repo-url directory'
+    'git-repos': [
+        'https://github.com/jobiols/cl-tatakua.git',
+        'git@github.com:jobiols/odoo-paraguay.git',
+        'https://github.com/jobiols/odoo-addons.git',
 
         # para multiple medios de pago
-        {'usr': 'jobiols', 'repo': 'adhoc-account-payment', 'branch': '13.0'},
-        {'usr': 'jobiols', 'repo': 'adhoc-account-financial-tools', 'branch': '13.0'},
+        'https://github.com/jobiols/adhoc-account-payment.git',
+        'https://github.com/jobiols/adhoc-account-financial-tools.git',
     ],
-    'docker': [
-        {'name': 'odoo', 'usr': 'jobiols', 'img': 'odoo-ent', 'ver': '13.0e'},
-        {'name': 'postgres', 'usr': 'postgres', 'ver': '10.1-alpine'},
-        {'name': 'nginx', 'usr': 'nginx', 'ver': 'latest'},
-    ]
 
+    'docker-images': [
+        'odoo jobiols/odoo-ent:13.0e',
+        'postgres postgres:10.1-alpine',
+        'nginx nginx'
+    ]
 }
