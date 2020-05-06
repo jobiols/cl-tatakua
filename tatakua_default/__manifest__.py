@@ -30,8 +30,6 @@
         'l10n_py_vat_book',
         'partner_ruc_unique',
 
-        # multiples medios de pago
-        'account_payment_group',
         # cartera de cheques e imporesion de cheques
         'l10n_py_check_printing',
     ],
