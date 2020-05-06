@@ -61,9 +61,9 @@
         'git@github.com:jobiols/odoo-paraguay.git',
         'https://github.com/jobiols/odoo-addons.git',
 
-        # para multiple medios de pago
-        'https://github.com/jobiols/adhoc-account-payment.git',
-        'https://github.com/jobiols/adhoc-account-financial-tools.git',
+        # para multiple medios de pago / lo quitamos
+#        'https://github.com/jobiols/adhoc-account-payment.git',
+#        'https://github.com/jobiols/adhoc-account-financial-tools.git',
     ],
 
     'docker-images': [
