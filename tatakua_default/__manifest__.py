@@ -57,11 +57,14 @@
     'git-repos': [
         'https://github.com/jobiols/cl-tatakua.git',
         'git@github.com:jobiols/odoo-paraguay.git',
-        'https://github.com/jobiols/odoo-addons.git',
 
-        # para multiple medios de pago / lo quitamos
-#        'https://github.com/jobiols/adhoc-account-payment.git',
-#        'https://github.com/jobiols/adhoc-account-financial-tools.git',
+        'https://github.com/jobiols/adhoc-account-payment.git',
+        'https://github.com/ingadhoc/account-financial-tools.git',
+
+        # 'https://github.com/jobiols/odoo-addons.git',
+        # 'https://github.com/oca/account-payment.git oca-adhoc-payment',
+        # 'https://github.com/ingadhoc/odoo-argentina.git',
+        # 'https://github.com/ingadhoc/account-invoicing.git',
     ],
 
     'docker-images': [
