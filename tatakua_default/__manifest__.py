@@ -27,11 +27,6 @@
     'website': 'http://github.com/jobiols/cl-tatakua',
     'license': 'AGPL-3',
     'depends': [
-        'l10n_py_vat_book',
-        'partner_ruc_unique',
-
-        # cartera de cheques e imporesion de cheques
-        'l10n_py_check_printing',
     ],
     'data': [
     ],
@@ -58,8 +53,8 @@
         'https://github.com/jobiols/cl-tatakua.git',
         'git@github.com:jobiols/odoo-paraguay.git',
 
-        'https://github.com/jobiols/adhoc-account-payment.git',
-        'https://github.com/ingadhoc/account-financial-tools.git',
+        'https://github.com/ingadhoc/account-payment.git',
+        #'https://github.com/ingadhoc/account-financial-tools.git',
 
         # 'https://github.com/jobiols/odoo-addons.git',
         # 'https://github.com/oca/account-payment.git oca-adhoc-payment',
