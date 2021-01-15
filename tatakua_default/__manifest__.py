@@ -20,7 +20,7 @@
 
 {
     'name': 'Tatakua',
-    'version': '13.0.0.0',
+    'version': '13.0.1.0.0',
     'category': 'Tools',
     'summary': "Proyecto Tatakua",
     'author': "Tecnopro",
@@ -33,11 +33,9 @@
     'installable': True,
     'application': False,
 
-    'limit_request': '8196',
-    'limit_memory_soft': '640000000',
-    'limit_memory_hard': '760000000',
-    'limit_time_cpu': '60',
-    'limit_time_real': '120',
+    'config': [
+        'workers = 0',
+    ],
 
     # manifest version, if omitted it is backward compatible
     'env-ver': '2',
@@ -51,20 +49,11 @@
     # list of url repos to install in the form 'repo-url directory'
     'git-repos': [
         'https://github.com/jobiols/cl-tatakua.git',
-        'git@github.com:jobiols/odoo-paraguay.git',
-
-        'https://github.com/ingadhoc/account-payment.git',
-        #'https://github.com/ingadhoc/account-financial-tools.git',
-
-        # 'https://github.com/jobiols/odoo-addons.git',
-        # 'https://github.com/oca/account-payment.git oca-adhoc-payment',
-        # 'https://github.com/ingadhoc/odoo-argentina.git',
-        # 'https://github.com/ingadhoc/account-invoicing.git',
+        'git@github.com:TecnoproPy/tatakua-sh.git',
     ],
 
     'docker-images': [
         'odoo jobiols/odoo-ent:13.0e',
         'postgres postgres:10.1-alpine',
-        'nginx nginx'
     ]
 }
